@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 200px;
+    height: 260px;
+    background-image: url('/src/assets/backgrounds/bannerBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 11px;
+    box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.cardOpacity {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    border-radius: 11px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cardContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 10px;
+}
+.cardHeader {
+    display: flex;
+    color: white;
+    height: 20%;
+}
+.cardName {
+    max-width: 60%;
+}
+.cardPrice {
+    margin-left: auto;
+    font-size: small;
+}
+.cardContent img {
+    width: 95%;
+    max-height: 50%;
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 0;
+}
+
+.cardsGrid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}

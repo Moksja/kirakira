@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(15, 14, 19);
+}
+
+.kkht-banner {
+    background-image: url('/src/assets/backgrounds/bannerBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 90vw;
+    height: 200px; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.3);
+ }
+
+ #bannerOpacity {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ }
+
+ #bannerTitle {
+    text-shadow: -2px 2px 5px rgba(255, 255, 255, 0.3);
+    color: #f5deb3;
+    font-size: 60px;
+ }
+
+ .kkht-banner img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+ }
